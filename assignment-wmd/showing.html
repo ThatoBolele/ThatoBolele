@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", intial scale="1.0"/>
+        <meta charset="utf-8">
+        <title>Major Cinemax</title>
+        <link rel="icon" href="Images/icon.png">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="slide-stylesheet" href="slides/slide CSS/slide-style.css">
+        <link href="fonts/Akshar/Akshar-VariableFont_wght.ttf" rel="font">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap" rel="stylesheet">
+        <style>
+            tr{
+                padding: 3px;
+            }
+            th{
+                padding: 10px 210px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="main">
+            <div class="navigation">
+                <a href="index.html"><img src="Images/LOGO.png" alt="Major Cinemax" title="Major Cinemax"></a>
+                <div id="heading">
+                <h1>MAJOR CINEMAX</h1>
+                <h6>Major Movies for Major People</h6>   
+                </div>
+                <div class="links">
+                    <div id="menu">
+                        <span class="material-symbols-outlined" onclick="hideMenu()">
+                        close
+                        </span>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li>
+                                <a>Categories</a>
+                                <ul class="submenu">
+                                    <li><a href="action.html">Action</a></li>
+                                    <li><a href="comedy.html">Comedy</a></li>
+                                    <li><a href="horror.html">Horror</a></li>
+                                    <li><a href="romance.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="showing.html">In-Theater</a></li>
+                            <li><a href="coming-soon.html">Comming-Soon</a></li>
+                        </ul>
+                    </div>
+                    <span class="material-symbols-outlined" onclick="showMenu()">
+                        menu
+                        </span>
+                </div>
+                <a href="#" class="tickets">GET TICKETS</a>
+                <label for="txtsearch">Search :</label>
+                <input type="search">
+            </div> 
+            <script>
+                var menu = document.getElementById("menu")
+
+                function showMenu(){
+                    menu.style.display = "block";
+                }
+                function hideMenu(){
+                    menu.style.display = "none";
+                }
+            </script> 
+            <div class="movies">
+                    <h1 style="font-size: 4em; text-align: center;">IN THEATER</h1>
+                    <hr size="2px" width="98%" color="white" >
+                    <br>
+                <a id="cat" href="action.html"><h2 style="text-align: center; font-size: 1.5em;">ACTION</h2></a> 
+                <table>
+                    <thead>
+                        <caption></caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="Images/movies/2022/showing/Action/day_to_die.jpg" alt="Day to Die" width="100%"></th>
+                            <th><img src="Images/movies/2022/showing/Action/uncharted.jpg" alt="Uncharted" width="100%"></th>
+                        </tr>
+                        <tr>
+                            <th><h4>Day to Die</h4><br><h4>2022</h4></th>
+                            <th><h4>Uncharted</h4><br><h4>2022</h4></th>
+                        </tr>
+                    </tbody>
+                </table>    
+                <hr size="2px" width="98%" color="white">
+                <br>
+                <a id="cat" href="comedy.html"><h2 style="text-align: center; font-size: 1.5em;">COMEDY</h2></a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><img src="Images/movies/2022/showing/Comedy/hotel_transylvania_transformania_ver2.jpg" alt="Hotel Transylvania Transformania" width="100%"></th>
+                            <th><img src="Images/movies/2022/showing/Comedy/bad_guys.jpg" alt="Bad Guys" width="100%"></th>
+                        </tr>
+                        <tr>
+                            <th><h4>Hotel Transylvania<br> Transformania</h4><br><h4>2022</h4></th>
+                            <th><h4>Bad Guys</h4><br><h4>2022</h4></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr size="2px" width="98%" color="white">
+                <br>
+                <a id="cat" href="horror.html"><h2 style="text-align: center; font-size: 1.5em;">HORROR</h2></a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><img src="Images/movies/2022/showing/Horror/umma.jpg" alt="Umma" wdth="100%"></th>
+                            <th><img src="Images/movies/2022/showing/Horror/morbius.jpg" alt="Morbius" width="100%"></th>
+                        </tr>
+                        <tr>
+                            <th><h4>Umma</h4><br><h4>2022</h4></th>
+                            <th><h4>Morbius</h4><br><h4>2022</h4></th>
+                        </tr>
+                    </tbody>
+                </table>                    
+                <hr size="2px" width="98%" color="white">
+                <br>
+                <a id="cat" href="romance.html"><h2 style="text-align: center; font-size: 1.5em;">ROMANCE</h2></a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><img src="Images/movies/2022/showing/Romance/loveland_ver2.jpg" alt="Expired" wdth="100%"></th>
+                            <th><img src="Images/movies/2022/showing/Romance/along_for_the_ride.jpg" alt="Alongfor the ride" width="100%"></th>
+                        </tr>
+                        <tr>
+                            <th><h4>Expired</h4><br><h4>2022</h4></th>
+                            <th><h4>Alongfor the ride</h4><br><h4>2022</h4></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>     
+    </body>
+    <footer id="footer">
+        <h1>END</h1>
+        <h3>Information</h2>
+        <div class="bottom">
+            <div class="info">
+                <h4>Contacts</h4>
+                <p>If you need any help or want to enquire about our services.<br> Please click on the button to access our contacts page.</p>
+                <br>
+                <br>
+                <a href="contacts.html" class="contacts">CONTACTS</a>
+                <br>
+                <br>           
+            </div>
+            <div class="info">
+                <h3>Feedback</h3>
+                <p>If you enjoyed your experience. <br> We would love to hear how you felt.<br> So please click on the button to access our feedback page and tell us about it.</p>
+                <br>
+                <a href="feedback.html" class="contacts">FEEDBACK</a>
+                <br>
+                <br>           
+            </div>
+        </div>
+    </footer>
+</html>
+

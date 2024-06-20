@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", intial scale="1.0"/>
+        <meta charset="utf-8">
+        <title>Major Cinemax</title>
+        <link rel="icon" href="Images/icon.png">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="fonts/Akshar/Akshar-VariableFont_wght.ttf" rel="font">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap" rel="stylesheet">
+        <style>
+            table{
+                padding: 1px 46px;
+                margin: 10px 30px 21px 13px;
+            }
+            table>tbody>tr>th{
+                border: 2px solid white;
+            }
+            th{
+            padding: 5px 46px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="main">
+            <div class="navigation">
+                <a href="index.html"><img src="Images/LOGO.png" alt="Major Cinemax" title="Major Cinemax"></a>
+                <div id="heading">
+                <h1>MAJOR CINEMAX</h1>
+                <h6>Major Movies for Major People</h6>   
+                </div>
+                <div class="links">
+                    <div id="menu">
+                        <span class="material-symbols-outlined" onclick="hideMenu()">
+                        close
+                        </span>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li>
+                                <a>Categories</a>
+                                <ul class="submenu">
+                                    <li><a href="action.html">Action</a></li>
+                                    <li><a href="comedy.html">Comedy</a></li>
+                                    <li><a href="horror.html">Horror</a></li>
+                                    <li><a href="romance.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="showing.html">In-Theater</a></li>
+                            <li><a href="coming-soon.html">Comming-Soon</a></li>
+                        </ul>
+                    </div>
+                    <span class="material-symbols-outlined" onclick="showMenu()">
+                        menu
+                        </span>
+                </div>
+                <a href="#" class="tickets">GET TICKETS</a>
+                <label for="txtsearch">Search :</label>
+                <input type="search">
+            </div> 
+            <script>
+                var menu = document.getElementById("menu")
+
+                function showMenu(){
+                    menu.style.display = "block";
+                }
+                function hideMenu(){
+                    menu.style.display = "none";
+                }
+            </script> 
+            <div class="a-mo">
+                <div id="table">
+                    <h1 style="text-align: center;">ACTION</h1>
+                    <hr size="2px" width="98%" color="white" >
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <img src="Images/movies/2022/showing/Action/uncharted.jpg" alt="Uncharted" width="100%">
+                                </th>
+                                <th style="text-align: left;">
+                                    <h2>Uncharted</h2>
+                                    <br>
+                                    <p>Treasure hunter Victor "Sully" Sullivan recruits street-smart Nathan Drake to help him recover a 500-year-old <br> lost fortune amassed by explorer Ferdinand Magellan. What starts out as a heist soon becomes a <br> globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada can get his <br> hands on it. If Sully and Nate can decipher the clues and solve one of the world's oldest mysteries, they <br> stand to find $5 billion in treasure -- but only if they can learn to work together.</p>
+                                    <br>
+                                    <p>Release date: February 18, 2022</p>
+                                    <br>
+                                    <p>Director: Ruben Fleischer</p>
+                                    <br>
+                                    <h3>Showing: April 22, 2022</h3>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <img src="Images/movies/2022/comining soon/Action/doctor_strange_in_the_multiverse_of_madness_ver2.jpg" alt="Doctor Strange in the Multiverse of Madness" width="100%">
+                                </th>
+                                <th style="text-align: left;">
+                                    <h2>Doctor Strange in the Multiverse of Madness</h2>
+                                    <br>
+                                    <p>Dr Stephen Strange casts a forbidden spell that opens a portal to the multiverse. However, a threat <br> emerges that may be too big for his team to handle.</p>
+                                    <br>
+                                    <p>Release date: May 6, 2022</p>
+                                    <br>
+                                    <p>Director: Sam Raimi</p>
+                                    <br>
+                                    <h3>Coming: May 17, 2022</h3>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <img src="Images/movies/2022/showing/Action/day_to_die.jpg" alt="Day to Die" width="100%">
+                                </th>
+                                <th style="text-align: left;">
+                                    <h2>Day to Die</h2>
+                                    <br>
+                                    <p>After killing a drug syndicate member while protecting a parolee, Connor Connolly has one day to pay two <br> million dollars in reparations he doesn't have to Tyrone Pettis. He is forced to ask his old military ops <br> crew, led by Brice Mason, to come together and somehow get two million dollars before Connor loses <br> everyone he loves.</p>
+                                    <br>
+                                    <p>Release date: March 4, 2022</p>
+                                    <br>
+                                    <p>Director: Wes Miller</p>
+                                    <br>
+                                    <h3>Showing: April 25, 2022</h3>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <img src="Images/movies/2022/comining soon/Action/memory.jpg" alt="Memory" width="100%">
+                                </th>
+                                <th style="text-align: left;">
+                                    <h2>Memory</h2>
+                                    <br>
+                                    <p>When Alex, an expert assassin, refuses to complete a job for a dangerous criminal organization, he <br> becomes a target. FBI agents and Mexican intelligence are brought in to investigate the trail of <br> bodies, leading them closer to Alex. With the crime syndicate and FBI in hot pursuit, Alex has the skills to <br> stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex <br> must question his every action and whom he can ultimately trust</p>
+                                    <br>
+                                    <p>Release date: April 29, 2022</p>
+                                    <br>
+                                    <p>Director: Martin Campbellr</p>
+                                    <br>
+                                    <h3>Coming: May 15, 2022</h3>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <img src="Images/movies/2022/comining soon/Action/father_stu.jpg" alt="Father Stu" width="100%">
+                                </th>
+                                <th style="text-align: left;">
+                                    <h2>Father Stu</h2>
+                                    <br>
+                                    <p>When an injury ends his amateur boxing career, Stuart Long moves to Los Angeles to find money and <br> fame. While scraping by as a supermarket clerk, he meets Carmen, a Sunday school teacher who seems <br> immune to his bad-boy charm. Determined to win her over, the longtime agnostic starts going to church to <br> impress her. However, a motorcycle accident leaves him wondering if he can use his second chance to <br> help others, leading to the surprising realization that he's meant to be a Catholic priest</p>
+                                    <br>
+                                    <p>Release date: April 28, 2022</p>
+                                    <br>
+                                    <p>Director: Rosalind Ross</p>
+                                    <br>
+                                    <h3>Coming: May 16, 2022</h3>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer id="footer">
+        <h1>END</h1>
+        <h3>Information</h2>
+        <div class="bottom">
+            <div class="info">
+                <h4>Contacts</h4>
+                <p>If you need any help or want to enquire about our services.<br> Please click on the button to access our contacts page.</p>
+                <br>
+                <br>
+                <a href="contacts.html" class="contacts">CONTACTS</a>
+                <br>
+                <br>           
+            </div>
+            <div class="info">
+                <h3>Feedback</h3>
+                <p>If you enjoyed your experience. <br> We would love to hear how you felt.<br> So please click on the button to access our feedback page and tell us about it.</p>
+                <br>
+                <a href="feedback.html" class="contacts">FEEDBACK</a>
+                <br>
+                <br>           
+            </div>
+        </div>
+    </footer>
+</html>

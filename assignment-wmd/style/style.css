@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Akshar', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+.main{
+    min-height: 120vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center; 
+}
+.navigation{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation>#heading{
+    font-size: 1.2em;
+    text-align: center;
+}
+img{
+    width: 150px;
+    float: left;
+}
+.links ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    vertical-align: middle;
+}
+.links ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.links ul>li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul>li:hover::after{
+    width: 100%;
+}
+.links ul>li>ul.submenu{
+    padding: none;
+    visibility: hidden;
+    display: none;
+    list-style: none;
+    font-size: 13px;
+}
+.links ul>li:hover>.submenu{
+    visibility: visible;
+    display: block;
+    text-decoration: none;
+}
+.links ul>li:hover>.submenu>li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul>li:hover>.submenu>li:hover::after{
+    width: 100%;
+}
+.navigation>.tickets{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 28px;
+    font-size: 10px;
+    background: transparent;
+    cursor: pointer;
+    position: static;
+    bottom: 0;
+  }
+.navigation>.tickets:hover{
+      border: 1px solid red;
+      background: red;
+      transition: 0.5s;
+}
+.navigation>input{
+    color: black;
+    border: 1px solid white;
+}
+#footer *{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+#footer>.bottom>.info>a{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 28px;
+    font-size: 10px;
+    background: transparent;
+    cursor: pointer;
+    position: static;
+    bottom: 0;
+}
+#footer>.bottom>.info>a:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 0.5s;
+}
+#footer>.bottom{
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.movies>#cat{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 28px;
+    font-size: 10px;
+    background: transparent;
+    cursor: pointer;
+    position: static;
+    bottom: 0;
+}
+.movies>#cat:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+.a-mo{
+    width: 100%;
+    margin: auto;
+}
+#footer>.bottom>.info{
+    flex-basis: 31%;
+    background: peru;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+.links span{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .main{
+        width: 200%;
+    }
+    .navigation{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    }
+    .links ul>li{
+        display: inline-block;
+    }
+    .links ul{
+        padding: 30px;
+    }
+    .links>div{
+        position: relative;
+        background: red;
+        height: 30vh;
+        width: 380px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+        display: none;
+    }
+    .links span{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .content>#upcoming>.slideshow-container>.mySlides>img{
+        width: 80%;
+    }
+    .content>.movies>table>tbody>tr>th{
+        padding: 5px 17px;
+    }
+    .movies>table>tbody>tr>th{
+        padding: 5px 80px;
+    }
+    #footer>.bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
